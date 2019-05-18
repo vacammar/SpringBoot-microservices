@@ -1,0 +1,78 @@
+version: '3'
+services:
+    recipe-api:
+        image: recipe-api
+        container_name: recipe-api
+        depends_on:
+        - mongodb
+        - recipe-gateway
+        networks:
+        - recipe-network
+        ports:
+        - 8081:8080
+        - 5005:5005
+    recipe-security:
+        image: recipe-security
+        container_name: recipe-security
+        depends_on:
+        - mysqldb
+        - recipe-gateway
+        networks:
+        - recipe-network
+        ports:
+        - 8082:8080
+        - 5006:5005
+    recipe-ui:
+        image: recipe-ui
+        container_name: recipe-ui
+        networks:
+        - recipe-network
+        ports:
+        - 8083:8080
+        - 5007:5005
+        depends_on:
+        - recipe-gateway
+    recipe-gateway:
+        image: recipe-gateway
+        container_name: recipe-gateway
+        networks:
+        - recipe-network
+        ports:
+        - 8084:8080
+        - 5008:5005
+        depends_on:
+          - recipe-discovery
+    recipe-discovery:
+        image: recipe-discovery
+        container_name: recipe-discovery
+        ports:
+          - 8761:8761
+        networks:
+          - recipe-network
+    mongodb:
+        image: mongo
+        container_name: mongo-db
+        networks:
+        - recipe-network
+        ports:
+        - 27017:27017
+        volumes:
+        - ./volumes/mongodb/data:/data/db
+    mysqldb:
+        image: mysql
+        container_name: mysql-db
+        environment:
+        - MYSQL_ROOT_PASSWORD=vacammar_security
+        - MYSQL_DATABASE=recipe_security_db
+        - MYSQL_USER=vacammar_security
+        - MYSQL_PASSWORD=vacammar_security
+        networks:
+        - recipe-network
+        ports:
+        - 3306:3306
+        volumes:
+        - ./volumes/mysql:/var/lib/mysql
+networks:
+    recipe-network:
+    recipe-network-public:
+    recipe-network-private:

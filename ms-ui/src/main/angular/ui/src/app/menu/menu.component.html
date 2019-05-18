@@ -1,0 +1,5 @@
+<ul class="nav justify-content-center">
+  <li class="nav-item" *ngFor="let menuItem of menuItemList">
+    <a class="nav-link" routerLink="/{{menuItem.routerLink}}">{{menuItem.title}}</a>
+  </li>
+</ul>

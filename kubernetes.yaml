@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+    name: recipe-api
+    labels:
+        app: recipe-api
+spec:
+    containers:
+        - name: recipe-container
+          image: kubernetes-recipe-api

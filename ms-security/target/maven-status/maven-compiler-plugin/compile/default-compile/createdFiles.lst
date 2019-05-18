@@ -1,0 +1,9 @@
+it/vacammar/security/SecurityConfiguration.class
+it/vacammar/api/AuthenticationController.class
+it/vacammar/App.class
+it/vacammar/dao/SecurityRepository.class
+it/vacammar/service/SecurityService.class
+it/vacammar/service/ISecurityService.class
+it/vacammar/dto/UserDTO.class
+it/vacammar/configuration/Swagger2Configuration.class
+it/vacammar/Exception/ServiceSecurityException.class

@@ -1,0 +1,13 @@
+<div class="recipe-detail-container">
+    <img src="{{imageURL}}/no-image-available.jpg" class="img-fluid">
+    <div class="recipe-content-box">
+        <h3>{{recipe.title}}</h3>
+        <b>Ingredients</b>
+        <p>{{recipe.description}}</p>
+        <p><b>Author:</b>&nbsp;{{recipe.author}}</p>
+        <div class="remove-recipe" title="Remove recipe">
+            <!--<button class="btn btn-danger" (click)="removeRecipe(recipe.id)">Remove</button> -->
+            <button class="btn btn-primary" routerLink="/recipes">close</button>
+        </div>
+    </div>
+</div>

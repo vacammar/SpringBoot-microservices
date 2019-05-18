@@ -1,0 +1,12 @@
+<div class="card recipe" style="width: 18rem;" *ngFor="let recipe of recipeList">
+  <img src="{{imageURL}}/no-image-available.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">{{recipe.title}}</h5>
+    <b class="card-text">Ingredients:</b>
+    <p class="card-text">{{recipe.description}}</p>
+    <p class="card-text"><b>Author:</b>&nbsp;{{recipe.author}}</p>
+    <a class="btn btn-primary" routerLink="/detail/{{recipe.id}}">
+      Details
+    </a>
+  </div>
+</div>

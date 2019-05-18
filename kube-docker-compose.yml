@@ -1,0 +1,39 @@
+version: '3'
+services:
+    recipe-api:
+        image: vacammar/recipe-api:latest
+        container_name: recipe-api
+        depends_on:
+        - mongodb
+        networks:
+        - recipe-network
+        ports:
+        - 8081:8080
+        - 5005:5005
+    mongodb:
+        image: mongo
+        container_name: mongo-db
+        networks:
+        - recipe-network
+        ports:
+        - 27017:27017
+        volumes:
+        - ./volumes/mongodb/data:/data/db
+    mysqldb:
+        image: mysql
+        container_name: mysql-db
+        environment:
+        - MYSQL_ROOT_PASSWORD=vacammar_security
+        - MYSQL_DATABASE=recipe_security_db
+        - MYSQL_USER=vacammar_security
+        - MYSQL_PASSWORD=vacammar_security
+        networks:
+        - recipe-network
+        ports:
+        - 3306:3306
+        volumes:
+        - ./volumes/mysql:/var/lib/mysql
+networks:
+    recipe-network:
+    recipe-network-public:
+    recipe-network-private:

@@ -1,0 +1,9 @@
+/home/valerio/git/RecipeApp/ms-security/src/main/java/it/vacammar/api/AuthenticationController.java
+/home/valerio/git/RecipeApp/ms-security/src/main/java/it/vacammar/service/ISecurityService.java
+/home/valerio/git/RecipeApp/ms-security/src/main/java/it/vacammar/service/SecurityService.java
+/home/valerio/git/RecipeApp/ms-security/src/main/java/it/vacammar/dto/UserDTO.java
+/home/valerio/git/RecipeApp/ms-security/src/main/java/it/vacammar/App.java
+/home/valerio/git/RecipeApp/ms-security/src/main/java/it/vacammar/Exception/ServiceSecurityException.java
+/home/valerio/git/RecipeApp/ms-security/src/main/java/it/vacammar/security/SecurityConfiguration.java
+/home/valerio/git/RecipeApp/ms-security/src/main/java/it/vacammar/dao/SecurityRepository.java
+/home/valerio/git/RecipeApp/ms-security/src/main/java/it/vacammar/configuration/Swagger2Configuration.java

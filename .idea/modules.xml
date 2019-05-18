@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/RecipeApp.iml" filepath="$PROJECT_DIR$/RecipeApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ms-api/ms-api.iml" filepath="$PROJECT_DIR$/ms-api/ms-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ms-discovery/ms-discovery.iml" filepath="$PROJECT_DIR$/ms-discovery/ms-discovery.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ms-gateway/ms-gateway.iml" filepath="$PROJECT_DIR$/ms-gateway/ms-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ms-security/ms-security.iml" filepath="$PROJECT_DIR$/ms-security/ms-security.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ms-ui/ms-ui.iml" filepath="$PROJECT_DIR$/ms-ui/ms-ui.iml" />
+      <module fileurl="file://$PROJECT_DIR$/security/security.iml" filepath="$PROJECT_DIR$/security/security.iml" />
+    </modules>
+  </component>
+</project>

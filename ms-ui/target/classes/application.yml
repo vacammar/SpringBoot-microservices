@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: recipe-ui
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://recipe-discovery:8761/eureka/
+      instance:
+        preferIpAddress: false

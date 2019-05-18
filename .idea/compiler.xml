@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="ms-api" />
+        <module name="ms-discovery" />
+        <module name="ms-gateway" />
+        <module name="ms-security" />
+        <module name="ms-ui" />
+        <module name="security" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="fe" target="1.8" />
+      <module name="ms-api" target="1.8" />
+      <module name="ms-discovery" target="1.8" />
+      <module name="ms-gateway" target="1.8" />
+      <module name="ms-security" target="1.8" />
+      <module name="ms-ui" target="1.8" />
+      <module name="RecipeApp" target="1.8" />
+      <module name="security" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="fe" options="-parameters" />
+      <module name="ms-api" options="-parameters" />
+      <module name="ms-discovery" options="-parameters" />
+      <module name="ms-gateway" options="-parameters" />
+      <module name="ms-security" options="-parameters" />
+      <module name="ms-ui" options="-parameters" />
+      <module name="security" options="-parameters" />
+    </option>
+  </component>
+</project>

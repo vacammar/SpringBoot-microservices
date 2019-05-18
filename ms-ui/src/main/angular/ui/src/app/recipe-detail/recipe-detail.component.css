@@ -1,0 +1,28 @@
+.recipe-container {
+    margin: 0 auto;
+}
+
+.recipe {
+    overflow-y: auto;
+    margin: 5px 5px 5px 5px;
+    box-shadow: lightgrey 1px 1px 1px;
+    float: left;
+    min-height: 415px;
+    max-height: 450px;
+}
+
+.recipe-detail-container {
+    background-color: #e9ecef;
+    box-shadow: lightgrey 2px 2px 2px;
+    overflow-y: auto;
+}
+
+.recipe-content-box {
+    padding: 15px;
+}
+
+.show-details {
+    background-color: lightgrey;
+    border: none;
+    margin: 0 auto;
+}
