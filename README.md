@@ -1,6 +1,6 @@
-# Recipe App
+# Microservices - Recipe App
 
-This sample application is an example of Angular 7 + Spring Boot Application.
+Sample application of microservices architecture with Angular7 and SpringBoot + Docker.
 
 ## Infrastructure view
 
